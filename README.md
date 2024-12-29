@@ -13,5 +13,5 @@ gcc .\src\runtime_linking.c -o runtime_linking_x64.exe -s -m64
 
 ## Usage
 ```
-runtime_linking_x64.exe <Parent PID> <Executable Path> <Arguments>
+runtime_linking_x64.exe <parent_pid> <executable_path> <args>
 ```
