@@ -1,6 +1,6 @@
 #include <windows.h>
 
-BOOL SpoofPPID(DWORD parentPid, char *exePath, char *arguments) {
+BOOL SpoofPPID(DWORD parentPid, char *executablePath, char *arguments) {
     BOOL (WINAPI *pCloseHandle)(
         HANDLE hObject
         );
@@ -143,7 +143,7 @@ BOOL SpoofPPID(DWORD parentPid, char *exePath, char *arguments) {
 
     // Create the new process
     if (!pCreateProcessA(
-            exePath,
+            executablePath,
             arguments,
             NULL,
             NULL,
