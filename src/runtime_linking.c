@@ -15,8 +15,8 @@ int main(int argc, char *argv[]) {
     }
 
     DWORD parentPid = atoi(argv[1]);
-    char *exePath = argv[2];
+    char *executablePath = argv[2];
     char *arguments = argv[3];
 
-    return SpoofPPID(parentPid, exePath, arguments);
+    return SpoofPPID(parentPid, executablePath, arguments);
 }
